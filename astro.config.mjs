@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config"
 import solidJs from "@astrojs/solid-js"
-import node from "@astrojs/node"
+import cloudflare from "@astrojs/cloudflare"
 
 import mdx from "@astrojs/mdx"
 
@@ -9,9 +9,7 @@ export default defineConfig({
 	site: "https://revolt.chat",
     output: "server",
     integrations: [solidJs(), mdx()],
-    adapter: node({
-        mode: "middleware",
-    }),
+    adapter: cloudflare(),
     redirects: {
         "/terms": {
             status: 307,
