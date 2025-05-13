@@ -1,0 +1,8 @@
+name = "revolt-chat"
+compatibility_date = "2023-10-30"
+
+[build]
+command = "npm install --legacy-peer-deps && npm run build"
+
+[site]
+builder = "astro"
