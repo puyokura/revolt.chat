@@ -105,7 +105,7 @@ if (changelogsOnlyForProduct) {
             {changelogEntries.length === 0 && <p class="none">No changelogs found.</p>}
             {
                 changelogEntries
-                .map((entry, i) => (
+                .map((entry) => (
                     <Article
                         href={`/updates/${entry.slug}`}
                         big={false}
@@ -134,7 +134,7 @@ if (changelogsOnlyForProduct) {
             <h2>Updates from Revolt</h2>
             <div class="article-grid">
                 {
-                    blogEntries.map((entry, i) => (
+                    blogEntries.map((entry) => (
                         <Article
                             href={`/updates/${entry.slug}`}
                             big={false}
